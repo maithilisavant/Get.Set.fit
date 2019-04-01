@@ -1,9 +1,108 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Beginscreen">
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:id="@+id/App_name"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Get.Set.Fit"
+        android:textSize="30sp"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        />
+
+
+        <ImageView
+            android:id="@+id/img_workout_plan"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_marginTop="55dp"
+            android:src="@drawable/ic_todo"
+        />
+        <TextView
+            android:id="@+id/info_workout_plan"
+            android:layout_width="match_parent"
+            android:layout_height="70sp"
+            android:text="Workout Plans"
+            android:textColor="@color/colorPrimary"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:layout_below="@+id/img_workout_plan"
+            />
+
+
+    <ImageView
+        android:id="@+id/img_measuring"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_below="@+id/info_workout_plan"
+        android:src="@drawable/ic_measuring_tape"
+        />
+    <TextView
+        android:id="@+id/info_measuring"
+        android:layout_width="match_parent"
+        android:layout_height="70sp"
+        android:text="Measure Your Performance"
+        android:textColor="@color/colorPrimary"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:layout_below="@+id/img_measuring"
+        />
+
+
+    <ImageView
+        android:id="@+id/img_step_counter"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:src="@drawable/ic_treadmill"
+        android:layout_below="@+id/info_measuring"
+        />
+    <TextView
+        android:id="@+id/info_step_counter"
+        android:layout_width="match_parent"
+        android:layout_height="70sp"
+        android:text="Keep Track of your Steps"
+        android:textColor="@color/colorPrimary"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:layout_below="@+id/img_step_counter"
+        />
+
+
+    <ImageView
+        android:id="@+id/img_heart"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:src="@drawable/ic_heart"
+        android:layout_below="@+id/info_step_counter"
+        />
+
+    <TextView
+        android:id="@+id/info_heart"
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:text="Get Fit"
+        android:textColor="@color/colorPrimary"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:layout_below="@+id/img_heart"
+        />
+
+    <Button
+        android:id="@+id/button_get_started"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:layout_below="@+id/info_heart"
+        android:layout_marginTop="-8dp"
+        android:background="@color/colorPrimary"
+        android:text="Get Started"
+        android:textSize="25sp"
+        android:textColor="#FFFFFF" />
+</RelativeLayout>
