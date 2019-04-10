@@ -1,7 +1,138 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"/>
+    tools:context=".Registration">
+
+    <TextView
+        android:id="@+id/App_name"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="Get.Set.Fit"
+        android:textSize="30sp"
+        android:textColor="@color/colorPrimary"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/tv_fullname"
+        android:layout_width="wrap_content"
+        android:layout_height="20sp"
+        android:layout_below="@+id/App_name"
+        android:layout_marginTop="30dp"
+        android:text="Full Name"
+        android:textColor="@color/colorPrimary"/>
+
+    <EditText
+        android:id="@+id/et_fullname"
+        android:layout_width="370sp"
+        android:layout_height="30sp"
+        android:layout_below="@+id/tv_fullname"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/black"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_dob"
+        android:layout_width="wrap_content"
+        android:layout_height="20sp"
+        android:layout_below="@+id/et_fullname"
+        android:layout_marginTop="10dp"
+        android:text="Date Of Birth"
+        android:textColor="@color/colorPrimary"/>
+
+    <EditText
+        android:id="@+id/et_dob"
+        android:layout_width="370sp"
+        android:layout_height="30sp"
+        android:ems="10"
+        android:layout_below="@+id/tv_dob"
+        android:inputType="date" />
+
+    <TextView
+        android:id="@+id/tv_email"
+        android:layout_width="wrap_content"
+        android:layout_height="20sp"
+        android:layout_below="@+id/et_dob"
+        android:layout_marginTop="10dp"
+        android:text="Email ID"
+        android:textColor="@color/colorPrimary"/>
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="370sp"
+        android:layout_height="30sp"
+        android:layout_below="@+id/tv_email"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/tv_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="20sp"
+        android:layout_below="@+id/et_email"
+        android:layout_marginTop="20dp"
+        android:text="Gender"
+        android:textColor="@color/colorPrimary"/>
+
+    <EditText
+        android:id="@+id/et_gender"
+        android:layout_width="370sp"
+        android:layout_height="30sp"
+        android:layout_below="@+id/tv_gender"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/tv_weight"
+        android:layout_width="wrap_content"
+        android:layout_height="20sp"
+        android:layout_below="@+id/et_gender"
+        android:layout_marginTop="10dp"
+        android:text="Weight"
+        android:textColor="@color/colorPrimary"/>
+
+    <EditText
+        android:id="@+id/et_weight"
+        android:layout_width="370sp"
+        android:layout_height="30sp"
+        android:layout_below="@+id/tv_weight"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/tv_height"
+        android:layout_width="wrap_content"
+        android:layout_height="20sp"
+        android:layout_below="@+id/et_weight"
+        android:layout_marginTop="10dp"
+        android:text="Height"
+        android:textColor="@color/colorPrimary"/>
+
+    <EditText
+        android:id="@+id/et_height"
+        android:layout_width="370sp"
+        android:layout_height="30sp"
+        android:layout_below="@+id/tv_height"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/black"
+        />
+
+    <Button
+        android:id="@+id/button_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_height"
+        android:layout_marginTop="30dp"
+        android:text="Register"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="150dp"
+        android:background="@color/colorPrimary"
+        />
+
+</RelativeLayout>

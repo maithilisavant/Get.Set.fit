@@ -103,6 +103,7 @@
         android:layout_marginTop="-8dp"
         android:background="@color/colorPrimary"
         android:text="Get Started"
+        android:onClick="onClick"
         android:textSize="25sp"
         android:textColor="#FFFFFF" />
 </RelativeLayout>
