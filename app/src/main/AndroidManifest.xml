@@ -33,6 +33,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".Beginscreen" />
+        <activity android:name=".Registration" />
     </application>
 
 </manifest>

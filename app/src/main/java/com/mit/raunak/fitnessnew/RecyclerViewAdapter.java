@@ -38,9 +38,9 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
             super(v);
 
             v.setOnClickListener(this);
-            textView = (TextView) v.findViewById(R.id.textViewAbs);
-            imageView = (ImageView) v.findViewById(R.id.imageViewAbs);
-            relativeLayout = (RelativeLayout) v.findViewById(R.id.relativeLayoutAbs);
+            textView = (TextView) v.findViewById(R.id.textViewf2);
+            imageView = (ImageView) v.findViewById(R.id.imageViewf2);
+            relativeLayout = (RelativeLayout) v.findViewById(R.id.relativeLayoutf2);
 
         }
 
