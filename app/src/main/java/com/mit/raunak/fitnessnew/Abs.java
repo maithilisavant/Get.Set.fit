@@ -2,6 +2,8 @@ package com.mit.raunak.fitnessnew;
 
 
 
+        import android.content.Intent;
+        import android.net.Uri;
         import android.support.v7.app.AppCompatActivity;
         import android.os.Bundle;
         import android.support.v7.widget.GridLayoutManager;
@@ -65,33 +67,166 @@ public class Abs extends AppCompatActivity implements RecyclerViewAdapter.ItemLi
 
     @Override
     public void onItemClick(DataModel item) {
-        int n = arrayList.size();
+
         //Videos
         setContentView(R.layout.exercise_detail);
-        VideoView videoView=(VideoView)findViewById(R.id.videoView2);
+        VideoView videoView = (VideoView) findViewById(R.id.videoView2);
         MediaController mediaController = new MediaController(this);
         mediaController.setAnchorView(videoView);
         videoView.setMediaController(mediaController);
 
         //TextView
-        TextView title=findViewById(R.id.textView);
-        TextView desc=findViewById(R.id.textView3);
-        for (int i = 0; i <= n; i++) {
-            final int s = i;
-            switch (s) {
+        TextView title = findViewById(R.id.textView);
+        TextView desc = findViewById(R.id.textView3);
+
+            switch (arrayList.indexOf(item)) {
+
                 case 0:
-                    videoView.setVideoPath("android.resource://" + getPackageName() + "/" + R.raw.ex1);
+                    videoView.setVideoURI(Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.ex1));
 
                     videoView.start();
                     title.setText(item.text);
-                    desc.setText("Muscle Abdominis slddnsdfknsdklnsdklcnsdklncsdknlsd");
-                   // Toast.makeText(getApplicationContext(), item.text + " is clicked", Toast.LENGTH_SHORT).show();
+                    desc.setText("@string/ex_desc1");
+                    // Toast.makeText(getApplicationContext(), item.text + " is clicked", Toast.LENGTH_SHORT).show();
                     break;
+
+                case 1:
+                    videoView.setVideoURI(Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.ex2));
+
+                    videoView.start();
+                    title.setText(item.text);
+                    desc.setText("@string/ex_desc2");
+
+                    break;
+
+
+                case 2:
+                    videoView.setVideoPath("android.resource://" + getPackageName() + "/" + R.raw.ex3);
+
+                    videoView.start();
+                    title.setText(item.text);
+                    desc.setText("@string/ex_desc3");
+
+                    break;
+
+                case 3:
+                    videoView.setVideoPath("android.resource://" + getPackageName() + "/" + R.raw.ex4);
+
+                    videoView.start();
+                    title.setText(item.text);
+                    desc.setText("@string/ex_desc4");
+
+                    break;
+
+                case 4:
+                    videoView.setVideoPath("android.resource://" + getPackageName() + "/" + R.raw.ex5);
+
+                    videoView.start();
+                    title.setText(item.text);
+                    desc.setText("@string/ex_desc5");
+
+                    break;
+
+                case 5:
+                    videoView.setVideoPath("android.resource://" + getPackageName() + "/" + R.raw.ex6);
+
+                    videoView.start();
+                    title.setText(item.text);
+                    desc.setText("@string/ex_desc6");
+
+                    break;
+
+
+                case 6:
+                    videoView.setVideoPath("android.resource://" + getPackageName() + "/" + R.raw.ex7);
+
+                    videoView.start();
+                    title.setText(item.text);
+                    desc.setText("@string/ex_desc7");
+
+                    break;
+
+                case 7:
+                    videoView.setVideoPath("android.resource://" + getPackageName() + "/" + R.raw.ex8);
+
+                    videoView.start();
+                    title.setText(item.text);
+                    desc.setText("@string/ex_desc8");
+
+                    break;
+
+                case 8:
+                    videoView.setVideoPath("android.resource://" + getPackageName() + "/" + R.raw.ex10);
+
+                    videoView.start();
+                    title.setText(item.text);
+                    desc.setText("@string/ex_desc9");
+
+                    break;
+
+
+                case 9:
+                    videoView.setVideoPath("android.resource://" + getPackageName() + "/" + R.raw.ex12);
+
+                    videoView.start();
+                    title.setText(item.text);
+                    desc.setText("@string/ex_desc12");
+
+                    break;
+
+                case 10:
+                    videoView.setVideoPath("android.resource://" + getPackageName() + "/" + R.raw.ex13);
+
+                    videoView.start();
+                    title.setText(item.text);
+                    desc.setText("@string/ex_desc13");
+
+                    break;
+
+                case 11:
+                    videoView.setVideoPath("android.resource://" + getPackageName() + "/" + R.raw.ex14);
+
+                    videoView.start();
+                    title.setText(item.text);
+                    desc.setText("@string/ex_desc14");
+
+                    break;
+
+                case 12:
+                    videoView.setVideoPath("android.resource://" + getPackageName() + "/" + R.raw.ex83);
+
+                    videoView.start();
+                    title.setText(item.text);
+                    desc.setText("@string/ex_desc15");
+
+                    break;
+
+
+                case 13:
+                    videoView.setVideoPath("android.resource://" + getPackageName() + "/" + R.raw.ex84);
+
+                    videoView.start();
+                    title.setText(item.text);
+                    desc.setText("@string/ex_desc16");
+
+                    break;
+
+
+               case 14:
+                    videoView.setVideoPath("android.resource://" + getPackageName() + "/" + R.raw.ex85);
+
+                    videoView.start();
+                    title.setText(item.text);
+                    desc.setText("@string/ex_desc17");
+
+                    break;
+
                 default:
                     Toast.makeText(getApplicationContext(), item.text + " is clicked", Toast.LENGTH_SHORT).show();
                     break;
             }
         }
     }
-}
+
+
 

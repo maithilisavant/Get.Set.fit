@@ -133,6 +133,7 @@
         android:layout_centerVertical="true"
         android:layout_marginLeft="150dp"
         android:background="@color/colorPrimary"
+        android:onClick="save"
         />
 
 </RelativeLayout>
