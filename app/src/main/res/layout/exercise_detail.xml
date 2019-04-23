@@ -2,8 +2,20 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/exercisedetail"
+    android:tag="detail"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
 
     <LinearLayout
         android:id="@+id/linearLayout2"
@@ -32,7 +44,7 @@
 
         <TextView
             android:id="@+id/textView"
-            android:layout_width="455dp"
+            android:layout_width="100dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="TextView" />
@@ -40,12 +52,12 @@
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="583dp"
-        android:layout_height="301dp"
-        android:layout_marginTop="336dp"
-        android:layout_marginBottom="22dp"
+        android:layout_width="400dp"
+        android:layout_height="261dp"
+        android:layout_marginTop="354dp"
+        android:layout_marginEnd="11dp"
+        android:autoSizeTextType="uniform"
         android:text="TextView"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

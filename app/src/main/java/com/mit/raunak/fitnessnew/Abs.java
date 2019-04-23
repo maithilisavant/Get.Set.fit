@@ -2,12 +2,15 @@ package com.mit.raunak.fitnessnew;
 
 
 
+        import android.app.Activity;
         import android.content.Intent;
         import android.net.Uri;
         import android.support.v7.app.AppCompatActivity;
         import android.os.Bundle;
         import android.support.v7.widget.GridLayoutManager;
         import android.support.v7.widget.RecyclerView;
+
+        import android.support.v7.widget.Toolbar;
         import android.widget.MediaController;
         import android.widget.TextView;
         import android.widget.Toast;
@@ -21,10 +24,18 @@ public class Abs extends AppCompatActivity implements RecyclerViewAdapter.ItemLi
     RecyclerView recyclerView;
     ArrayList<DataModel> arrayList;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abs);
+        Toolbar myToolbar = (Toolbar) findViewById(R.id.toolbarAbs);
+
+        setSupportActionBar(myToolbar);
+       if(getSupportActionBar() !=null)
+       {
+           getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+       }
 
 
         recyclerView = (RecyclerView) findViewById(R.id.recyclerView1);
@@ -64,8 +75,7 @@ public class Abs extends AppCompatActivity implements RecyclerViewAdapter.ItemLi
         /*GridLayoutManager manager = new GridLayoutManager(this, 2, GridLayoutManager.VERTICAL, false);
         recyclerView.setLayoutManager(manager);*/
     }
-
-    @Override
+        @Override
     public void onItemClick(DataModel item) {
 
         //Videos
@@ -79,14 +89,22 @@ public class Abs extends AppCompatActivity implements RecyclerViewAdapter.ItemLi
         TextView title = findViewById(R.id.textView);
         TextView desc = findViewById(R.id.textView3);
 
+        //
+        Toolbar mToolbar = (Toolbar) findViewById(R.id.my_toolbar);
+        setSupportActionBar(mToolbar);
+
+        //
+
+
             switch (arrayList.indexOf(item)) {
 
                 case 0:
                     videoView.setVideoURI(Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.ex1));
-
                     videoView.start();
                     title.setText(item.text);
-                    desc.setText("@string/ex_desc1");
+                    desc.setText(getString(R.string.ex_desc1));
+                    mToolbar.setTitle(item.text);
+
                     // Toast.makeText(getApplicationContext(), item.text + " is clicked", Toast.LENGTH_SHORT).show();
                     break;
 
@@ -95,7 +113,8 @@ public class Abs extends AppCompatActivity implements RecyclerViewAdapter.ItemLi
 
                     videoView.start();
                     title.setText(item.text);
-                    desc.setText("@string/ex_desc2");
+                    desc.setText(getString(R.string.ex_desc2));
+                    mToolbar.setTitle(item.text);
 
                     break;
 
@@ -105,7 +124,8 @@ public class Abs extends AppCompatActivity implements RecyclerViewAdapter.ItemLi
 
                     videoView.start();
                     title.setText(item.text);
-                    desc.setText("@string/ex_desc3");
+                    desc.setText(getString(R.string.ex_desc3));
+                    mToolbar.setTitle(item.text);
 
                     break;
 
@@ -114,7 +134,8 @@ public class Abs extends AppCompatActivity implements RecyclerViewAdapter.ItemLi
 
                     videoView.start();
                     title.setText(item.text);
-                    desc.setText("@string/ex_desc4");
+                    desc.setText(getString(R.string.ex_desc4));
+                    mToolbar.setTitle(item.text);
 
                     break;
 
@@ -123,8 +144,8 @@ public class Abs extends AppCompatActivity implements RecyclerViewAdapter.ItemLi
 
                     videoView.start();
                     title.setText(item.text);
-                    desc.setText("@string/ex_desc5");
-
+                    desc.setText(getString(R.string.ex_desc5));
+                    mToolbar.setTitle(item.text);
                     break;
 
                 case 5:
@@ -132,98 +153,100 @@ public class Abs extends AppCompatActivity implements RecyclerViewAdapter.ItemLi
 
                     videoView.start();
                     title.setText(item.text);
-                    desc.setText("@string/ex_desc6");
+                    desc.setText(getString(R.string.ex_desc6));
+                    mToolbar.setTitle(item.text);
 
                     break;
 
 
                 case 6:
                     videoView.setVideoPath("android.resource://" + getPackageName() + "/" + R.raw.ex7);
-
+                    mToolbar.setTitle(item.text);
                     videoView.start();
                     title.setText(item.text);
-                    desc.setText("@string/ex_desc7");
+                    desc.setText(getString(R.string.ex_desc7));
 
                     break;
 
                 case 7:
                     videoView.setVideoPath("android.resource://" + getPackageName() + "/" + R.raw.ex8);
-
+                    mToolbar.setTitle(item.text);
                     videoView.start();
                     title.setText(item.text);
-                    desc.setText("@string/ex_desc8");
+                    desc.setText(getString(R.string.ex_desc8));
 
                     break;
 
                 case 8:
                     videoView.setVideoPath("android.resource://" + getPackageName() + "/" + R.raw.ex10);
-
+                    mToolbar.setTitle(item.text);
                     videoView.start();
                     title.setText(item.text);
-                    desc.setText("@string/ex_desc9");
+                    desc.setText(getString(R.string.ex_desc10));
 
                     break;
 
 
                 case 9:
                     videoView.setVideoPath("android.resource://" + getPackageName() + "/" + R.raw.ex12);
-
+                    mToolbar.setTitle(item.text);
                     videoView.start();
                     title.setText(item.text);
-                    desc.setText("@string/ex_desc12");
+                    desc.setText(getString(R.string.ex_desc12));
 
                     break;
 
                 case 10:
                     videoView.setVideoPath("android.resource://" + getPackageName() + "/" + R.raw.ex13);
-
+                    mToolbar.setTitle(item.text);
                     videoView.start();
                     title.setText(item.text);
-                    desc.setText("@string/ex_desc13");
+                    desc.setText(getString(R.string.ex_desc13));
 
                     break;
 
                 case 11:
                     videoView.setVideoPath("android.resource://" + getPackageName() + "/" + R.raw.ex14);
-
+                    mToolbar.setTitle(item.text);
                     videoView.start();
                     title.setText(item.text);
-                    desc.setText("@string/ex_desc14");
+                    desc.setText(getString(R.string.ex_desc14));
 
                     break;
 
                 case 12:
                     videoView.setVideoPath("android.resource://" + getPackageName() + "/" + R.raw.ex83);
-
+                    mToolbar.setTitle(item.text);
                     videoView.start();
                     title.setText(item.text);
-                    desc.setText("@string/ex_desc15");
+                    desc.setText(getString(R.string.ex_desc83));
 
                     break;
 
 
                 case 13:
                     videoView.setVideoPath("android.resource://" + getPackageName() + "/" + R.raw.ex84);
-
+                    mToolbar.setTitle(item.text);
                     videoView.start();
                     title.setText(item.text);
-                    desc.setText("@string/ex_desc16");
+                    desc.setText(getString(R.string.ex_desc84));
 
                     break;
 
 
                case 14:
                     videoView.setVideoPath("android.resource://" + getPackageName() + "/" + R.raw.ex85);
-
+                   mToolbar.setTitle(item.text);
                     videoView.start();
                     title.setText(item.text);
-                    desc.setText("@string/ex_desc17");
+                    desc.setText(getString(R.string.ex_desc85));
 
                     break;
 
                 default:
                     Toast.makeText(getApplicationContext(), item.text + " is clicked", Toast.LENGTH_SHORT).show();
                     break;
+
             }
         }
     }
