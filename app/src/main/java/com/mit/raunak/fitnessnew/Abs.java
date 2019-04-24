@@ -4,6 +4,7 @@ package com.mit.raunak.fitnessnew;
 
         import android.app.Activity;
         import android.content.Intent;
+        import android.media.MediaPlayer;
         import android.net.Uri;
         import android.support.v7.app.AppCompatActivity;
         import android.os.Bundle;
@@ -75,6 +76,7 @@ public class Abs extends AppCompatActivity implements RecyclerViewAdapter.ItemLi
         /*GridLayoutManager manager = new GridLayoutManager(this, 2, GridLayoutManager.VERTICAL, false);
         recyclerView.setLayoutManager(manager);*/
     }
+
         @Override
     public void onItemClick(DataModel item) {
 
@@ -84,6 +86,13 @@ public class Abs extends AppCompatActivity implements RecyclerViewAdapter.ItemLi
         MediaController mediaController = new MediaController(this);
         mediaController.setAnchorView(videoView);
         videoView.setMediaController(mediaController);
+        //Loop Play
+            videoView.setOnPreparedListener (new MediaPlayer.OnPreparedListener() {
+                @Override
+                public void onPrepared(MediaPlayer mp) {
+                    mp.setLooping(true);
+                }
+            });
 
         //TextView
         TextView title = findViewById(R.id.textView);
