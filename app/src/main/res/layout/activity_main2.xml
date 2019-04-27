@@ -5,17 +5,18 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
     <include layout="@layout/app_bar" />
+
     <android.support.design.widget.TabLayout
         android:id="@+id/tabLayout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="35dp"
         android:minHeight="?actionBarSize"
+        app:tabBackground="@color/custom"
         app:tabGravity="fill"
-        app:tabIndicatorColor="#000000"
+        app:tabIndicatorColor="#CFDFF2"
         app:tabIndicatorHeight="4dp"
-        app:tabBackground="@color/colorPrimary"
-        app:tabMode="fixed">
-    </android.support.design.widget.TabLayout>
+        app:tabMode="fixed"
+        app:tabTextColor="#FDFDFD"></android.support.design.widget.TabLayout>
     <android.support.v4.view.ViewPager
         android:id="@+id/viewPager"
         android:layout_width="match_parent"

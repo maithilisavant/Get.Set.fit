@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/allerta_stencil</item>
+        <item>@font/carter_one</item>
+        <item>@font/crete_round</item>
+        <item>@font/el_messiri</item>
+        <item>@font/im_fell_dw_pica</item>
+        <item>@font/inika</item>
+        <item>@font/margarine</item>
+        <item>@font/raleway_medium</item>
+        <item>@font/salsa</item>
+    </array>
+</resources>

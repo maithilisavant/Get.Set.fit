@@ -2,11 +2,16 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.mit.raunak.fitnessnew">
 
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/mainlogo"
         android:label="Fitness New"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/mainlogo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
                 <activity android:name=".Chest" />
@@ -37,6 +42,15 @@
         </activity>
         <activity android:name=".Beginscreen" />
         <activity android:name=".Registration" />
+        <activity android:name=".HeartRate"/>
+        <activity android:name=".Measure"/>
+        <activity android:name=".EditUserDetails"/>
+        <activity android:name=".BMI"/>
+        <activity android:name=".Step_Main"/>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

@@ -11,11 +11,12 @@
         android:id="@+id/my_toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="?attr/colorPrimary"
+        android:background="@color/custom"
         android:elevation="4dp"
         android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
         app:layout_constraintTop_toTopOf="parent"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:titleTextColor="#FFFFFF" />
 
     <LinearLayout
         android:id="@+id/linearLayout2"
@@ -46,18 +47,23 @@
             android:id="@+id/textView"
             android:layout_width="100dp"
             android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
             android:layout_weight="1"
-            android:text="TextView" />
+            android:text="TextView"
+            android:textSize="18sp"
+            android:textStyle="bold" />
     </LinearLayout>
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="400dp"
-        android:layout_height="261dp"
+        android:layout_width="396dp"
+        android:layout_height="304dp"
         android:layout_marginTop="354dp"
         android:layout_marginEnd="11dp"
         android:autoSizeTextType="uniform"
+        android:fontFamily="@font/inika"
         android:text="TextView"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

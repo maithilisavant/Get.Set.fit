@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Registration">
-
+    tools:context=".EditUserDetails">
 
     <TextView
         android:id="@+id/App_name"
@@ -18,19 +17,17 @@
 
     <TextView
         android:id="@+id/tv_fullname"
-        android:layout_width="82dp"
-        android:layout_height="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="20sp"
         android:layout_below="@+id/App_name"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="30dp"
         android:text="Full Name"
-        android:textSize="14sp"
-        android:textAppearance="@style/Widget.MaterialComponents.TextInputEditText.FilledBox"
-        android:textColor="@color/colorPrimary" />
+        android:textColor="@color/colorPrimary"/>
 
     <EditText
         android:id="@+id/et_fullname"
         android:layout_width="370sp"
-        android:layout_height="40sp"
+        android:layout_height="50sp"
         android:layout_below="@+id/tv_fullname"
         android:layout_marginTop="5dp"
         android:textColor="@color/black"
@@ -49,11 +46,10 @@
     <EditText
         android:id="@+id/et_dob"
         android:layout_width="370sp"
-        android:layout_height="40sp"
+        android:layout_height="50sp"
         android:ems="10"
         android:layout_below="@+id/tv_dob"
-        android:inputType="date"
-        />
+        android:inputType="date" />
 
     <TextView
         android:id="@+id/tv_gender"
@@ -64,42 +60,20 @@
         android:text="Gender"
         android:textColor="@color/colorPrimary"/>
 
-    <RadioGroup
-        android:id="@+id/radioGender"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <EditText
+        android:id="@+id/et_gender"
+        android:layout_width="370sp"
+        android:layout_height="50sp"
         android:layout_below="@+id/tv_gender"
-        android:orientation="horizontal"
-        >
+        android:layout_marginTop="5dp"
+        android:textColor="@color/black"/>
 
-        <RadioButton
-            android:id="@+id/rbmale"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Male"
-            android:checked="true"
-            android:layout_below="@+id/tv_gender"
-            android:layout_marginTop="5dp"
-            android:textColor="@color/colorPrimary"
-            />
-
-        <RadioButton
-            android:id="@+id/rbfemale"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Female"
-            android:textColor="@color/colorPrimary"
-            android:layout_below="@+id/tv_gender"
-            android:layout_marginTop="5dp"
-            />
-
-    </RadioGroup>
 
     <TextView
         android:id="@+id/tv_weight"
         android:layout_width="wrap_content"
         android:layout_height="20sp"
-        android:layout_below="@+id/radioGender"
+        android:layout_below="@+id/et_gender"
         android:layout_marginTop="10dp"
         android:text="Weight"
         android:textColor="@color/colorPrimary"/>
@@ -107,7 +81,7 @@
     <EditText
         android:id="@+id/et_weight"
         android:layout_width="370sp"
-        android:layout_height="40sp"
+        android:layout_height="50sp"
         android:layout_below="@+id/tv_weight"
         android:layout_marginTop="5dp"
         android:textColor="@color/black"
@@ -125,7 +99,7 @@
     <EditText
         android:id="@+id/et_height"
         android:layout_width="370sp"
-        android:layout_height="40sp"
+        android:layout_height="50sp"
         android:layout_below="@+id/tv_height"
         android:layout_marginTop="5dp"
         android:textColor="@color/black"
@@ -144,6 +118,23 @@
         android:layout_marginEnd="163dp"
         android:background="@color/colorPrimary"
         android:onClick="save"
-        android:text="Register" />
+        android:text="Save" />
+
+
+
+
+    <!--<Button
+        android:id="@+id/button_load"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_height"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginRight="2dp"
+        android:layout_toRightOf="@id/button_register"
+        android:background="@color/colorPrimary"
+        android:onClick="load"
+        android:text="Load" />-->
 
 </RelativeLayout>

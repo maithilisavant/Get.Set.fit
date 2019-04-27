@@ -1,0 +1,16 @@
+<resources>
+    <string-array name="quotes">
+        <item>“Your body can stand almost anything. It’s your mind that you have to convince.”</item>
+        <item>“Fitness is like a relationship. You can’t cheat and expect it to work.”</item>
+        <item>“Respect your body. It’s the only one you get.”</item>
+        <item>“Dead last finish is greater than did not finish, which trumps did not start.”</item>
+        <item>"No Pain No Gain"</item>
+        <item> “The best way to predict the future is to create it.” – Abraham Lincoln</item>
+        <item>“Work hard in silence. Let success be your noise.” – Frank Ocean</item>
+        <item>“Rome wasn’t built in a day, but they worked on it every single day.”</item>
+        <item>“Use the 21/90 rule: It takes 21 days to create a habit. It takes 90 days to create a lifestyle.”</item>
+        <item>“Strive for progress, not perfection.”</item>
+        <item> “The difference between try and triumph is a little umph.” – Marvin Phillips</item>
+    </string-array>
+
+</resources>

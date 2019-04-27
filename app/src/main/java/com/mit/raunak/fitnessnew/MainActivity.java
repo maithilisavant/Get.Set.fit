@@ -26,6 +26,7 @@ import android.widget.TextView;
             adapter.addFragment(new Tab3Fragment(), "Utility");
             viewPager.setAdapter(adapter);
             tabLayout.setupWithViewPager(viewPager);
+
         }
     }
 

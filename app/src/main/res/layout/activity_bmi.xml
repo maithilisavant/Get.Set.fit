@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    >
+
+    <EditText
+        android:id="@+id/et_bmiw"
+        android:layout_width="160sp"
+        android:layout_height="40sp"
+        android:layout_below="@+id/tv_bmiw"
+        android:layout_marginLeft="110dp"
+        />
+
+    <EditText
+        android:id="@+id/et_bmih"
+        android:layout_width="160sp"
+        android:layout_height="40sp"
+        android:layout_below="@+id/tv_bmih"
+        android:layout_marginLeft="110dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_bmiw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="100dp"
+        android:text="Weight" />
+
+    <TextView
+        android:id="@+id/tv_bmih"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="110dp"
+        android:layout_below="@+id/et_bmiw"
+        android:layout_marginTop="20dp"
+        android:text="Height"
+        />
+
+    <TextView
+        android:id="@+id/tv_cm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_below="@+id/tv_bmiw"
+        android:layout_toRightOf="@+id/et_bmiw"
+        android:text="(cms)" />
+
+    <TextView
+        android:id="@+id/tv_kg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_bmiw"
+        android:layout_toRightOf="@+id/et_bmiw"
+        android:layout_marginTop="20dp"
+        android:text="(Kg)"
+        />
+
+    <Button
+        android:id="@+id/btnbmi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_bmih"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="20dp"
+        android:onClick="caclbmi"
+        android:text="Calculate" />
+
+    <EditText
+        android:id="@+id/et_output"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnbmi"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:alpha="0"
+        android:textAlignment="center"
+        />
+
+    <EditText
+        android:id="@+id/et_output2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_output"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:alpha="0"
+        android:textAlignment="center"
+        />
+
+</RelativeLayout>
