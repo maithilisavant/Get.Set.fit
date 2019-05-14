@@ -74,7 +74,7 @@ public class Tab1Fragment extends Fragment {
 String h=sharedpreferences.getString(Height,"");
       int heightint= Integer.parseInt(h);
         double heightm1=(double) heightint/1000;
-     double heightm2=(double) heightm1*heightm1*10;
+     double heightm2=(double) (heightm1*heightm1)*10;
          double bmi=(double) (weightint*heightm2);
 
         String bmistring=Double.toString(bmi);
@@ -88,6 +88,7 @@ String h=sharedpreferences.getString(Height,"");
 
        double idealw=(double)22*hm2;
        String iw=Double.toString(idealw);
+       iw=String.format("%.2f",idealw);
        idealweight.setText(iw+" kg");
 
         //Water Intake

@@ -165,9 +165,7 @@ public class Measure extends AppCompatActivity implements SurfaceHolder.Callback
         camera.setDisplayOrientation(result);
     }
 
-    /**
-     * FROM: https://github.com/phishman3579/android-heart-rate-monitor
-     */
+;
     private static PreviewCallback previewCallback = new PreviewCallback() {
 
 
@@ -216,10 +214,7 @@ public class Measure extends AppCompatActivity implements SurfaceHolder.Callback
             averageArray[averageIndex] = imgAvg;
             averageIndex++;
 
-            // Transitioned from one state to another to the same
-            /*if (newType != currentType) {
-                currentType = newType;
-            }*/
+           
 
             long endTime = System.currentTimeMillis();
             double totalTimeInSecs = (endTime - startTime) / 1000d;

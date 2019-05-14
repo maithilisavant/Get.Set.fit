@@ -47,11 +47,11 @@ public class HeartRate extends AppCompatActivity{
             RatingBar rb = (RatingBar) findViewById(R.id.ratingBar);
             tv = (TextView) findViewById(R.id.text);
             if (Double.parseDouble(number) > 90) {
-                //Cosa mala
+
                 rb.setRating(0);
                 tv.setText("Your heart rate is to high");
             } else {
-                //Cosa buena
+
                 rb.setRating(1);
                 tv.setText("Your heart rate is correct");
             }
